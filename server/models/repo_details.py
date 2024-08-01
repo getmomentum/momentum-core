@@ -32,6 +32,7 @@ class TestPlan(BaseModel):
 
 class TestPlanDetails(BaseModel):
     plan: TestPlan
+    configuration: dict
     project_id: int
     identifier: str
 
@@ -40,6 +41,7 @@ class PreferenceDetails(BaseModel):
     preference: str
     identifier: str
     project_id: int
+    configuration: dict
 
 
 class GetTestPlan(BaseModel):
